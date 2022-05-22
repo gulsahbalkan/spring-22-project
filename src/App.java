@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import medianProblem.*;
 public class App {
     public static void main(String[] args){
+        long start=System.nanoTime():
         Operators operator = new Operators();
         double[][] facs_coordinates = operator.createDistanceMatrix(5,2);
         double[][] points_coordinates = operator.createDistanceMatrix(20,2);
@@ -49,6 +50,7 @@ public class App {
             unassignedFacilities.remove(facs[min_i]);
             sums[min_i]=-1;
         }
+        System.out.println("Execution time is:" + (System.nanoTime()-start)+" nanoseconds.");
     }
 }
 
