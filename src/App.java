@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import medianProblem.*;
 public class App {
     public static void main(String[] args){
-        long start=System.nanoTime():
+        long start=System.nanoTime();
         Operators operator = new Operators();
         double[][] facs_coordinates = operator.createDistanceMatrix(5,2);
         double[][] points_coordinates = operator.createDistanceMatrix(20,2);
