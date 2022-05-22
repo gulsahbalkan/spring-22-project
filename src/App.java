@@ -45,6 +45,8 @@ public class App {
                     min_i=i;
                 }
             }
+            openedFacilities.add(facs[min_i]);
+            unassignedFacilities.remove(facs[min_i]);
         }
     }
 }
