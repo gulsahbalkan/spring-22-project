@@ -28,6 +28,14 @@ public class App {
             unassignedFacilities.add(facs[facilityIndex]);
             facilityIndex++;
         }
+        double[]sums=new double[unassignedFacilities.size()];
+        for(int i=0; i<distanceMatrix.length;i++){
+            double sum=0;
+            for(int j=0;j< distanceMatrix[0].length;j++){
+                sum=sum+distanceMatrix[i][j];
+            }
+            sums[i]=sum;
+        }
     }
 }
 
