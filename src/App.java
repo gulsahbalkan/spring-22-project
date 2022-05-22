@@ -19,9 +19,15 @@ public class App {
         }
         double[][] distanceMatrix = operator.distanceMatrix(facs, points);
         ArrayList<Facility> openedFacilities = new ArrayList<>();
-        ArrayList<Point> unassignedPoints = new ArrayList<>();
+        ArrayList<Facility> unassignedFacilities = new ArrayList<>();
         ArrayList<ArrayList<Point>> assignmentList = new ArrayList<>();
-        
+
+        int P=4;
+        int facilityIndex=0;
+        while(facilityIndex<facs.length){
+            unassignedFacilities.add(facs[facilityIndex]);
+            facilityIndex++;
+        }
     }
 }
 
