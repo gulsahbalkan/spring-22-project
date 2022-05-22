@@ -7,6 +7,13 @@ Serkan Sürel - S017796
 How does the execution time change when problem size is increased? 
 Report it by running the same algorithm for the given datasets.
 
+//Explanation
+First we equated facilities to unassignedFacilities. 
+Then we kept the sum of the distances of all points belonging to each facility in the sums array.
+Next in the while loop we found the minimum to match with the right facility until our openedFacilities size is P.
+We added the facilty(the min)to openedFacilities and removed it from the unassignedFacilities.
+Lastly, we calculated the execution time.
+
 //Answer
 When (P = 4, Facility = 5, Point = 20) = Execution time is:4384800 nanoseconds.
 
