@@ -36,6 +36,16 @@ public class App {
             }
             sums[i]=sum;
         }
+        while (openedFacilities.size() !=P){
+            double min= Double.MAX_VALUE;
+            int min_i=0;
+            for(int i=0;i< sums.length;i++){
+                if (min > sums[i] && sums[i]>-1) {
+                    min =sums[i];
+                    min_i=i;
+                }
+            }
+        }
     }
 }
 
